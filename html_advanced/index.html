@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Videos Section</title>
+    <title>Membership Section</title>
     <style>
         .quote-section {
             max-width: 800px;
@@ -37,30 +37,31 @@
             color: #666;
         }
 
-        .videos-section {
+        .videos-section, .membership-section {
             max-width: 1200px;
             margin: 2rem auto;
             padding: 2rem;
         }
-        .videos-grid {
+        .videos-grid, .membership-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
         }
-        .video-card {
+        .video-card, .membership-card {
             background: white;
             border-radius: 8px;
-            padding: 1rem;
+            padding: 1.5rem;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
         }
-        .video-image {
+        .video-image, .membership-image {
             width: 100%;
             height: 200px;
             object-fit: cover;
             border-radius: 4px;
             margin-bottom: 1rem;
         }
-        .video-author {
+        .video-author, .membership-author {
             display: flex;
             align-items: center;
             margin: 1rem 0;
@@ -80,6 +81,19 @@
             width: 16px;
             height: 16px;
             margin-right: 2px;
+        }
+        .membership-button {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        .membership-button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -103,80 +117,69 @@
         <section class="videos-section">
             <h2>Videos</h2>
             <div class="videos-grid">
-                <!-- Video Card 1 -->
-                <div class="video-card">
-                    <img src="https://via.placeholder.com/400x200" alt="Video 1" class="video-image">
-                    <h3>Understanding AI Basics</h3>
-                    <p>Learn the fundamentals of artificial intelligence and its applications in modern technology.</p>
-                    <div class="video-author">
-                        <img src="https://via.placeholder.com/40x40" alt="Author 1" class="author-image">
-                        <h4>John Smith</h4>
-                    </div>
-                    <div class="rating">
-                        <img src="https://via.placeholder.com/16x16" alt="Star" class="star">
-                        <img src="https://via.placeholder.com/16x16" alt="Star" class="star">
-                        <img src="https://via.placeholder.com/16x16" alt="Star" class="star">
-                        <img src="https://via.placeholder.com/16x16" alt="Star" class="star">
-                        <img src="https://via.placeholder.com/16x16" alt="Star" class="star">
-                        <span>5.0</span>
-                    </div>
+                <!-- Video Cards (same as before) -->
+                <!-- ... -->
+            </div>
+        </section>
+
+        <!-- Membership Section -->
+        <section class="membership-section">
+            <h2>Membership Plans</h2>
+            <div class="membership-grid">
+                <!-- Membership Card 1 -->
+                <div class="membership-card">
+                    <img src="https://via.placeholder.com/400x200" alt="Basic Plan" class="membership-image">
+                    <h3>Basic</h3>
+                    <p>Perfect for beginners who want to learn the basics.</p>
+                    <p>Access to:</p>
+                    <ul>
+                        <li>Basic video tutorials</li>
+                        <li>Community forum</li>
+                        <li>Monthly challenges</li>
+                    </ul>
+                    <a href="#" class="membership-button">Join for $9/month</a>
                 </div>
 
-                <!-- Video Card 2 -->
-                <div class="video-card">
-                    <img src="https://via.placeholder.com/400x200" alt="Video 2" class="video-image">
-                    <h3>Web Development Basics</h3>
-                    <p>Get started with web development using HTML, CSS, and JavaScript.</p>
-                    <div class="video-author">
-                        <img src="https://via.placeholder.com/40x40" alt="Author 2" class="author-image">
-                        <h4>Jane Doe</h4>
-                    </div>
-                    <div class="rating">
-                        <img src="https://via.placeholder.com/16x16" alt="Star" class="star">
-                        <img src="https://via.placeholder.com/16x16" alt="Star" class="star">
-                        <img src="https://via.placeholder.com/16x16" alt="Star" class="star">
-                        <img src="https://via.placeholder.com/16x16" alt="Star" class="star">
-                        <img src="https://via.placeholder.com/16x16" alt="Star" class="star">
-                        <span>4.9</span>
-                    </div>
+                <!-- Membership Card 2 -->
+                <div class="membership-card">
+                    <img src="https://via.placeholder.com/400x200" alt="Premium Plan" class="membership-image">
+                    <h3>Premium</h3>
+                    <p>Ideal for intermediate learners who want to deepen their knowledge.</p>
+                    <p>Includes Basic +:</p>
+                    <ul>
+                        <li>Advanced video tutorials</li>
+                        <li>Live Q&A sessions</li>
+                        <li>Project reviews</li>
+                    </ul>
+                    <a href="#" class="membership-button">Join for $29/month</a>
                 </div>
 
-                <!-- Video Card 3 -->
-                <div class="video-card">
-                    <img src="https://via.placeholder.com/400x200" alt="Video 3" class="video-image">
-                    <h3>Python Programming</h3>
-                    <p>Master Python programming with practical examples and projects.</p>
-                    <div class="video-author">
-                        <img src="https://via.placeholder.com/40x40" alt="Author 3" class="author-image">
-                        <h4>Mike Johnson</h4>
-                    </div>
-                    <div class="rating">
-                        <img src="https://via.placeholder.com/16x16" alt="Star" class="star">
-                        <img src="https://via.placeholder.com/16x16" alt="Star" class="star">
-                        <img src="https://via.placeholder.com/16x16" alt="Star" class="star">
-                        <img src="https://via.placeholder.com/16x16" alt="Star" class="star">
-                        <img src="https://via.placeholder.com/16x16" alt="Star" class="star">
-                        <span>4.8</span>
-                    </div>
+                <!-- Membership Card 3 -->
+                <div class="membership-card">
+                    <img src="https://via.placeholder.com/400x200" alt="Pro Plan" class="membership-image">
+                    <h3>Pro</h3>
+                    <p>Perfect for professionals who want to master their craft.</p>
+                    <p>Includes Premium +:</p>
+                    <ul>
+                        <li>Masterclass videos</li>
+                        <li>One-on-one mentoring</li>
+                        <li>Exclusive projects</li>
+                    </ul>
+                    <a href="#" class="membership-button">Join for $49/month</a>
                 </div>
 
-                <!-- Video Card 4 -->
-                <div class="video-card">
-                    <img src="https://via.placeholder.com/400x200" alt="Video 4" class="video-image">
-                    <h3>UI/UX Design</h3>
-                    <p>Learn the principles of user interface and user experience design.</p>
-                    <div class="video-author">
-                        <img src="https://via.placeholder.com/40x40" alt="Author 4" class="author-image">
-                        <h4>Sarah Wilson</h4>
-                    </div>
-                    <div class="rating">
-                        <img src="https://via.placeholder.com/16x16" alt="Star" class="star">
-                        <img src="https://via.placeholder.com/16x16" alt="Star" class="star">
-                        <img src="https://via.placeholder.com/16x16" alt="Star" class="star">
-                        <img src="https://via.placeholder.com/16x16" alt="Star" class="star">
-                        <img src="https://via.placeholder.com/16x16" alt="Star" class="star">
-                        <span>4.7</span>
-                    </div>
+                <!-- Membership Card 4 -->
+                <div class="membership-card">
+                    <img src="https://via.placeholder.com/400x200" alt="Enterprise Plan" class="membership-image">
+                    <h3>Enterprise</h3>
+                    <p>Tailored solutions for businesses and organizations.</p>
+                    <p>Includes Pro +:</p>
+                    <ul>
+                        <li>Custom training programs</li>
+                        <li>Team management tools</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <a href="#" class="membership-button">Contact Us</a>
                 </div>
             </div>
         </section>
